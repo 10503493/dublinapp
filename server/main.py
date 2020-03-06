@@ -34,7 +34,7 @@ def login():
     cur = mysql.connection.cursor()
     cur.execute("select * from users where uname=%s and pword=%s",[usr.strip(),psd.strip()])
     data = cur.fetchall()
-    print (data)#jkkkkkkkkkkkkkkkkkkkkkkkkk
+    print (data)#jkkkkkkkkkkkkkkkkkkkjkjkkkkkkk
     cur.close()
     if len(data) > 0:
      return render_template('products.html',useridx = data[0][2])
